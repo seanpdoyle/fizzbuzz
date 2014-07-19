@@ -6,13 +6,10 @@ def fizz(number):
 def buzz(number):
   return number != 0 and number % 5 == 0
 
-def fizz_buzz(number):
-  return fizz(number) and buzz(number)
-
-def fizz_buzz_strings(numbers):
+def fizz_buzz(numbers):
   strings = []
   for number in numbers:
-    if fizz_buzz(number):
+    if fizz(number) and buzz(number):
       strings.append("FizzBuzz")
     elif fizz(number):
       strings.append("Fizz")
@@ -24,9 +21,10 @@ def fizz_buzz_strings(numbers):
   return strings
 
 class FizzBuzzTest(unittest.TestCase):
-  def test_fizz_buzz_strings(self):
-    expected = ["0", "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz",
-        "11", "Fizz", "13", "14", "FizzBuzz"]
+  def test_fizz_buzz(self):
+    expected = [
+      "0", "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"
+    ];
     numbers = range(0, 16)
 
-    self.assertEqual(fizz_buzz_strings(numbers), expected)
+    self.assertEqual(fizz_buzz(numbers), expected)
