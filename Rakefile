@@ -8,5 +8,10 @@ task :rust do
   system "rustc --test rust/*.rs && ./fizzbuzz && rm fizzbuzz"
 end
 
-task :test => [:ruby, :rust]
+task :haskell do
+  fizzbuzz = "haskell/fizzbuzz"
+  system "ghc #{fizzbuzz}.hs && #{fizzbuzz} && rm #{fizzbuzz}.hi && rm #{fizzbuzz} && rm #{fizzbuzz}.o"
+end
+
+task :test => [:ruby, :rust, :haskell]
 task :default => :test

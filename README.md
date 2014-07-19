@@ -23,6 +23,16 @@ To run the tests:
 $ rustc --test rust/fizzbuzz.rs && ./fizzbuzz && rm fizzbuzz
 ```
 
+## Haskell
+
+Succinct Haskell
+
+To run `fizzbuzz` for `[0..100]`:
+
+```
+$ ghc haskell/fizzbuzz.hs && haskell/fizzbuzz
+```
+
 # Tests
 
 To run all the tests
