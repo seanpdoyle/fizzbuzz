@@ -13,5 +13,9 @@ task :haskell do
   system "ghc #{fizzbuzz}.hs && #{fizzbuzz} && rm #{fizzbuzz}.hi && rm #{fizzbuzz} && rm #{fizzbuzz}.o"
 end
 
-task :test => [:ruby, :rust, :haskell]
+task :python do
+  system "python -m unittest discover python"
+end
+
+task :test => [:ruby, :rust, :haskell, :python]
 task :default => :test

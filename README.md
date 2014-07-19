@@ -33,6 +33,16 @@ To run `fizzbuzz` for `[0..100]`:
 $ ghc haskell/fizzbuzz.hs && haskell/fizzbuzz
 ```
 
+## Python
+
+Definitely not Ruby
+
+To run the tests:
+
+```
+$ python -m unittest discover python
+```
+
 # Tests
 
 To run all the tests
