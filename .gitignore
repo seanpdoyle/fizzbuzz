@@ -2,3 +2,5 @@
 *.o
 *.pyc
 rust/fizzbuzz
+build/
+.gradle/

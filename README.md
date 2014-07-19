@@ -43,6 +43,22 @@ To run the tests:
 $ python -m unittest discover python
 ```
 
+## Java
+
+In all its glory
+
+To run the tests:
+
+```
+$ gradle -b java/gradle.properties
+```
+
+To properly view test failures and errors:
+
+```
+$ open java/build/reports/tests/index.html
+```
+
 # Tests
 
 To run all the tests
@@ -62,3 +78,5 @@ To run only `rust` tests
 ```
 $ rake rust
 ```
+
+And so on for each language.

@@ -17,5 +17,9 @@ task :python do
   system "python -m unittest discover python"
 end
 
-task :test => [:ruby, :rust, :haskell, :python]
+task :java do
+  system "gradle -b java/gradle.properties"
+end
+
+task :test => [:ruby, :rust, :haskell, :python, :java]
 task :default => :test
