@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# Setup your dependencies
+
+set -e
+
+brew bundle

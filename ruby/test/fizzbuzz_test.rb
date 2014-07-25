@@ -1,8 +1,9 @@
 $LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
+
 require "minitest/autorun"
 require "fizzbuzz"
 
-class FixnumTest < Minitest::Test
+class FixnumTest < Minitest::Unit::TestCase
   def test_zero_is_nothing
     refute 0.fizz?, "0 is not fizz"
     refute 0.buzz?, "0 is not fizz"
@@ -34,7 +35,7 @@ class FixnumTest < Minitest::Test
   end
 end
 
-class FizzBuzzTest < Minitest::Test
+class FizzBuzzTest < Minitest::Unit::TestCase
   def test_fizz_buzz
     fizz_buzz = FizzBuzz.new(0..15)
 

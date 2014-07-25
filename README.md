@@ -2,6 +2,12 @@
 
 Get out of your comfort zone.
 
+## Setup and Installation
+
+```console
+$ bin/setup
+```
+
 ## Ruby
 
 Vanilla ruby with some good ole monkey-patching.
