@@ -1,32 +1,7 @@
-fn main() {
-    for num in range(0i, 100) {
-        let string =
-            if fizz_buzz(num) {
-                "FizzBuzz".to_str()
-            }
-            else if buzz(num) {
-                "Buzz".to_str()
-            }
-            else if fizz(num) {
-                "Fizz".to_str()
-            } else {
-                num.to_str()
-            };
-        println!("{}", string);
-    }
-}
-
-fn fizz(num: int) -> bool {
-    num != 0 && num % 3 == 0
-}
-
-fn buzz(num: int) -> bool {
-    num != 0 && num % 5 == 0
-}
-
-fn fizz_buzz(num: int) -> bool {
-    fizz(num) && buzz(num)
-}
+extern crate fizzbuzz;
+use fizzbuzz::buzz;
+use fizzbuzz::fizz;
+use fizzbuzz::fizz_buzz;
 
 #[test]
 fn test_0_not_fizz() {

@@ -1,6 +1,6 @@
 *.hi
 *.o
 *.pyc
-rust/fizzbuzz
 build/
 .gradle/
+rust/target/

@@ -26,7 +26,7 @@ Rubyists](http://www.rustforrubyists.com/book/book.html)
 To run the tests:
 
 ```
-$ rustc --test rust/fizzbuzz.rs && ./fizzbuzz && rm fizzbuzz
+$ cargo test --manifest-path rust
 ```
 
 ## Haskell

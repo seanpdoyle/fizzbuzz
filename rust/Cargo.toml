@@ -1,0 +1,9 @@
+[package]
+
+name = "fizzbuzz"
+version = "0.0.1"
+authors = [ "Sean Doyle <seandoyle@thoughtbot.com>" ]
+
+[[bin]]
+
+name = "fizzbuzz"
