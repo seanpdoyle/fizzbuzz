@@ -6,7 +6,7 @@ end
 
 desc "Run the Rust tests"
 task :rust do
-  system "rustc --test rust/*.rs && ./fizzbuzz && rm fizzbuzz"
+  system "cargo test --manifest-path rust/Cargo.toml"
 end
 
 desc "Run the Haskell tests"
